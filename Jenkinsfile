@@ -3,12 +3,12 @@ pipeline {
   environment {
     DOCKER_IMAGE = "my-jenkins-app"
     DOCKER_TAG = "latest"
-    DOCKER_REPO = "your-dockerhub-username/my-jenkins-app"
+    DOCKER_REPO = "pradhisha/my-jenkins-app"
     }
   stages {
     stage('Clone Repository') {
       steps {
-        git 'https://github.com/your-username/docker-jenkins-app.git'
+        git 'https://github.com/Pradhisha-N/Docker_project4.git'
         }
       }
     stage('Build Docker Image') {
